@@ -1,0 +1,37 @@
+/* Increase contrast for all links */
+a,
+a:visited {
+  color: #0056B3 !important;
+  text-decoration: underline !important;
+}
+
+
+/* Increase contrast for striped table rows with hyperlinks. */
+table a,
+table a:visited {
+  color: #004FA3 !important;
+  text-decoration: underline !important;
+}
+
+/* BOOTSTRAP COLORS ADJUSTED FOR ADA */
+.btn-primary {
+  color: #fff;
+  background-color: #0056b3 !important; /* #007bff; */
+  border-color: #0056b3 !important; /* ##007bff; */
+}
+.alert-warning {
+  color: #674d04 !important;  /* #856404 */
+  background-color: #fff3cd !important; /* #fff3cd; */
+  border-color: #fff3cd !important; /* #ffeeba; */
+}
+
+/* FOOTER */
+#footer { border-top: 0; background:black ;  color: #ccc; margin-top:0 }
+#footer a,
+#footer a:visited {
+  color: #3898FF !important;
+  text-decoration: underline !important;
+}
+#siteinfo { font-size:1em; line-height:1.25em; padding: 2rem 1rem; color: #aaa; margin-top: 3rem; }
+
+

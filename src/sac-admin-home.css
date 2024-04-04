@@ -1,0 +1,32 @@
+.nav {
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.active {
+  font-weight: bold;
+} 
+
+.link-blue,
+.link-blue:hover,
+.link-blue:visited {
+  color: #0000ff !important;
+  text-decoration: underline !important;
+}
+
+table.sac-apps {
+  margin-top: 1rem;
+}
+table.sac-apps tr:first-of-type th {
+  border-top: none !important;
+}
+table.sac-apps td.bdr-lt {
+  border-left: 1px dashed #c0c0c0;
+}
+table.sac-apps td.bdr-lt-rt {
+  border-left: 1px dashed #c0c0c0;
+  border-right: 1px dashed #c0c0c0;
+}
+table.sac-apps td.bdr-rt {
+  border-right: 1px dashed #c0c0c0;
+}
