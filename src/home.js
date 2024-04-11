@@ -332,6 +332,7 @@ export default function Home(props) {
               <caption className="sr-only">List of applications</caption>
               <thead>
                 <tr>
+                  <th className="text-center" scope="col">Select</th>
                   <th className="text-center" scope="col">
                     <span className="btn link-blue p-0" onClick={ () => { setAppListing(sortAppsByAppId(appListing)) }}>
                       App<br />ID
@@ -387,6 +388,9 @@ export default function Home(props) {
               <tbody>
                 { filteredApps().map(app => 
                     <tr key={app.appId}>
+                      <td className="text-center bdr-lt-rt">
+                        <input type="checkbox" id={app.appId} name={app.applicantName} />
+                      </td>
                       <td className="text-center px-4 bdr-rt">{app.appId}</td>
                       <td className="text-left">
                         <span className="font-weight-bold">

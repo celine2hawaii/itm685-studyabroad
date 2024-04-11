@@ -1,1 +1,283 @@
-{"status":"SUCCESS","code":200,"message":"Valid Request","records":25,"data":[{"programOfferingId":"387","termCode":"202440","programCode":"ANGERS","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Angers, France"},{"programOfferingId":"398","termCode":"202440","programCode":"BERL02","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Berlin, Germany - Term II"},{"programOfferingId":"399","termCode":"202440","programCode":"BERL03","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-04-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2024-03-04 14:31:18","termDesc":"Summer 2024","programName":"Berlin, Germany - Term III"},{"programOfferingId":"400","termCode":"202440","programCode":"BERL23","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Berlin, Germany - Term II & Term III"},{"programOfferingId":"403","termCode":"202440","programCode":"DUHLTH","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Dublin, Ireland - Health Sciences Summer School"},{"programOfferingId":"401","termCode":"202440","programCode":"DUINTN","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Dublin, Ireland - Summer Internship Programme"},{"programOfferingId":"402","termCode":"202440","programCode":"DUIRCE","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Dublin, Ireland - Dublin Irish Consultancy Experience"},{"programOfferingId":"406","termCode":"202440","programCode":"DUIRST","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Dublin, Ireland - Irish Studies"},{"programOfferingId":"405","termCode":"202440","programCode":"DUORGC","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Dublin, Ireland - Organic Chemistry"},{"programOfferingId":"404","termCode":"202440","programCode":"DUPHYS","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Dublin, Ireland - Physics Summer Program"},{"programOfferingId":"410","termCode":"202440","programCode":"FLOR01","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Florence, Italy - Summer 1"},{"programOfferingId":"411","termCode":"202440","programCode":"FLOR02","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Florence, Italy - Summer 2"},{"programOfferingId":"412","termCode":"202440","programCode":"FLOR12","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Florence, Italy - Summer 1 & 2"},{"programOfferingId":"409","termCode":"202440","programCode":"FLORAR","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Florence, Italy - Architecture Studio"},{"programOfferingId":"390","termCode":"202440","programCode":"KOBEJA","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Kobe, Japan"},{"programOfferingId":"395","termCode":"202440","programCode":"LILE01","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Lille, France - ESP 1"},{"programOfferingId":"396","termCode":"202440","programCode":"LILE02","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Lille, France - ESP 2"},{"programOfferingId":"397","termCode":"202440","programCode":"LILE12","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Lille, France - ESP 1 & 2"},{"programOfferingId":"391","termCode":"202440","programCode":"MENDOZ","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Mendoza, Argentina"},{"programOfferingId":"392","termCode":"202440","programCode":"PARISF","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Paris, France"},{"programOfferingId":"393","termCode":"202440","programCode":"SEVILL","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Seville, Spain"},{"programOfferingId":"394","termCode":"202440","programCode":"SHANGH","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Shanghai, China"},{"programOfferingId":"414","termCode":"202440","programCode":"SKACAD","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Yongin, South Korea - Academic Program"},{"programOfferingId":"415","termCode":"202440","programCode":"SKGLAC","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-02-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2023-10-11 15:11:49","termDesc":"Summer 2024","programName":"Yongin, South Korea - Global Village & Academic Program"},{"programOfferingId":"413","termCode":"202440","programCode":"SKLANG","applyStartDate":"2023-10-10 16:01:00","applyEndDate":"2024-04-16 16:00:00","createdAt":"2023-10-11 15:11:49","modifiedAt":"2024-03-04 15:50:06","termDesc":"Summer 2024","programName":"Yongin, South Korea - Korean Language Program"}]}
+{
+    "status": "SUCCESS",
+    "code": 200,
+    "message": "Valid Request",
+    "records": 25,
+    "data": [
+        {
+            "programOfferingId": "387",
+            "termCode": "202440",
+            "programCode": "ANGERS",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Angers, France"
+        },
+        {
+            "programOfferingId": "398",
+            "termCode": "202440",
+            "programCode": "BERL02",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Berlin, Germany - Term II"
+        },
+        {
+            "programOfferingId": "399",
+            "termCode": "202440",
+            "programCode": "BERL03",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-04-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2024-03-04 14:31:18",
+            "termDesc": "Summer 2024",
+            "programName": "Berlin, Germany - Term III"
+        },
+        {
+            "programOfferingId": "400",
+            "termCode": "202440",
+            "programCode": "BERL23",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Berlin, Germany - Term II & Term III"
+        },
+        {
+            "programOfferingId": "403",
+            "termCode": "202440",
+            "programCode": "DUHLTH",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Dublin, Ireland - Health Sciences Summer School"
+        },
+        {
+            "programOfferingId": "401",
+            "termCode": "202440",
+            "programCode": "DUINTN",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Dublin, Ireland - Summer Internship Programme"
+        },
+        {
+            "programOfferingId": "402",
+            "termCode": "202440",
+            "programCode": "DUIRCE",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Dublin, Ireland - Dublin Irish Consultancy Experience"
+        },
+        {
+            "programOfferingId": "406",
+            "termCode": "202440",
+            "programCode": "DUIRST",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Dublin, Ireland - Irish Studies"
+        },
+        {
+            "programOfferingId": "405",
+            "termCode": "202440",
+            "programCode": "DUORGC",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Dublin, Ireland - Organic Chemistry"
+        },
+        {
+            "programOfferingId": "404",
+            "termCode": "202440",
+            "programCode": "DUPHYS",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Dublin, Ireland - Physics Summer Program"
+        },
+        {
+            "programOfferingId": "410",
+            "termCode": "202440",
+            "programCode": "FLOR01",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Florence, Italy - Summer 1"
+        },
+        {
+            "programOfferingId": "411",
+            "termCode": "202440",
+            "programCode": "FLOR02",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Florence, Italy - Summer 2"
+        },
+        {
+            "programOfferingId": "412",
+            "termCode": "202440",
+            "programCode": "FLOR12",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Florence, Italy - Summer 1 & 2"
+        },
+        {
+            "programOfferingId": "409",
+            "termCode": "202440",
+            "programCode": "FLORAR",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Florence, Italy - Architecture Studio"
+        },
+        {
+            "programOfferingId": "390",
+            "termCode": "202440",
+            "programCode": "KOBEJA",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Kobe, Japan"
+        },
+        {
+            "programOfferingId": "395",
+            "termCode": "202440",
+            "programCode": "LILE01",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Lille, France - ESP 1"
+        },
+        {
+            "programOfferingId": "396",
+            "termCode": "202440",
+            "programCode": "LILE02",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Lille, France - ESP 2"
+        },
+        {
+            "programOfferingId": "397",
+            "termCode": "202440",
+            "programCode": "LILE12",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Lille, France - ESP 1 & 2"
+        },
+        {
+            "programOfferingId": "391",
+            "termCode": "202440",
+            "programCode": "MENDOZ",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Mendoza, Argentina"
+        },
+        {
+            "programOfferingId": "392",
+            "termCode": "202440",
+            "programCode": "PARISF",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Paris, France"
+        },
+        {
+            "programOfferingId": "393",
+            "termCode": "202440",
+            "programCode": "SEVILL",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Seville, Spain"
+        },
+        {
+            "programOfferingId": "394",
+            "termCode": "202440",
+            "programCode": "SHANGH",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Shanghai, China"
+        },
+        {
+            "programOfferingId": "414",
+            "termCode": "202440",
+            "programCode": "SKACAD",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Yongin, South Korea - Academic Program"
+        },
+        {
+            "programOfferingId": "415",
+            "termCode": "202440",
+            "programCode": "SKGLAC",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-02-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2023-10-11 15:11:49",
+            "termDesc": "Summer 2024",
+            "programName": "Yongin, South Korea - Global Village & Academic Program"
+        },
+        {
+            "programOfferingId": "413",
+            "termCode": "202440",
+            "programCode": "SKLANG",
+            "applyStartDate": "2023-10-10 16:01:00",
+            "applyEndDate": "2024-04-16 16:00:00",
+            "createdAt": "2023-10-11 15:11:49",
+            "modifiedAt": "2024-03-04 15:50:06",
+            "termDesc": "Summer 2024",
+            "programName": "Yongin, South Korea - Korean Language Program"
+        }
+    ]
+}
