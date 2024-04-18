@@ -281,7 +281,7 @@ export default function Home(props) {
           : app
       )
     )
-    console.log("hi");
+    console.log(selectedApps);
   }
 
 
