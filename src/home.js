@@ -254,7 +254,7 @@ export default function Home(props) {
     console.log("Updated status");
   }
 
-  const Checkbox = ({ isChecked, label, checkHandler, index }) => {
+  const Checkbox = ({ isChecked, checkHandler, index }) => {
     return (
       <div>
         <input
@@ -263,12 +263,15 @@ export default function Home(props) {
           checked={isChecked}
           onChange={checkHandler}
         />
-        <label htmlFor={`checkbox-${index}`}>{label}</label>
       </div>
     )
   }
 
-  const [selectedApps, setSelectedApps] = useState(appListing);
+  const appListingState = filteredApps().map(element => {
+    return {app: element, checked: false}
+  });
+
+  const [selectedApps, setSelectedApps] = useState(appListingState);
 
   const updateCheckStatus = index => {
     setSelectedApps(
@@ -278,6 +281,7 @@ export default function Home(props) {
           : app
       )
     )
+    console.log("hi");
   }
 
 
@@ -291,7 +295,7 @@ export default function Home(props) {
 
         <label for="myfile">Choose File</label>
         <input type="file" id="myfile" name="myfile" onChange={onFileChange} />
-        <button onChange={sendFileRequest}>Upload Transcript</button>
+        <button onClick={sendFileRequest}>Upload Transcript</button>
 
         <div>
           <label htmlFor="selectOption">Select an option:</label>
@@ -302,8 +306,10 @@ export default function Home(props) {
             <option value="option3">Option 3</option>
           </select>
           {selectedOption && <p>You selected: {selectedOption}</p>}
-          <button>Update Status</button>
+          <button onClick={sendStatusUpdate}>Update Status</button>
         </div>
+
+        <pre>{JSON.stringify(selectedApps, null, 2)}</pre>
       </>
 
 
@@ -470,7 +476,6 @@ export default function Home(props) {
                     key={app.appId}
                     isChecked={app.checked}
                     checkHandler={() => updateCheckStatus(index)}
-                    label={app.applicantName}
                     index={index}
                   />
                 </td>
