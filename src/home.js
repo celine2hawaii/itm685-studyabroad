@@ -234,11 +234,53 @@ export default function Home(props) {
   }
 
   const [selectedOption, setSelectedOption] = useState('');
+  const [uploadedFile, setUploadedFile] = useState(null);
 
   const handleSelectChange = (event) => {
     setSelectedOption(event.target.value);
     console.log(event.target.value);
   };
+
+  const onFileChange = (event) => {
+    setUploadedFile(event.target.files[0]);
+    console.log(event.target.files[0].name);
+  };
+
+  const sendFileRequest = () => {
+    console.log("Sent file");
+  }
+
+  const sendStatusUpdate = () => {
+    console.log("Updated status");
+  }
+
+  const Checkbox = ({ isChecked, label, checkHandler, index }) => {
+    return (
+      <div>
+        <input
+          type="checkbox"
+          id={`checkbox-${index}`}
+          checked={isChecked}
+          onChange={checkHandler}
+        />
+        <label htmlFor={`checkbox-${index}`}>{label}</label>
+      </div>
+    )
+  }
+
+  const [selectedApps, setSelectedApps] = useState(appListing);
+
+  const updateCheckStatus = index => {
+    setSelectedApps(
+      selectedApps.map((app, currentIndex) =>
+        currentIndex === index
+          ? { ...app, checked: !app.checked }
+          : app
+      )
+    )
+  }
+
+
 
   return (
     <>
@@ -246,19 +288,22 @@ export default function Home(props) {
         <div class={bannerStyle}>
           This is a test banner!
         </div>
-        <label for="myfile">Select a file:</label>
-        <input type="file" id="myfile" name="myfile"/>
+
+        <label for="myfile">Choose File</label>
+        <input type="file" id="myfile" name="myfile" onChange={onFileChange} />
+        <button onChange={sendFileRequest}>Upload Transcript</button>
+
         <div>
-        <label htmlFor="selectOption">Select an option:</label>
-        <select id="selectOption" value={selectedOption} onChange={handleSelectChange}>
-          <option value="">-- Please select --</option>
-          <option value="option1">Option 1</option>
-          <option value="option2">Option 2</option>
-          <option value="option3">Option 3</option>
-        </select>
-        {selectedOption && <p>You selected: {selectedOption}</p>}
-        <button>Update Status</button>
-      </div>
+          <label htmlFor="selectOption">Select an option:</label>
+          <select id="selectOption" value={selectedOption} onChange={handleSelectChange}>
+            <option value="">-- Please select --</option>
+            <option value="option1">Option 1</option>
+            <option value="option2">Option 2</option>
+            <option value="option3">Option 3</option>
+          </select>
+          {selectedOption && <p>You selected: {selectedOption}</p>}
+          <button>Update Status</button>
+        </div>
       </>
 
 
@@ -417,10 +462,17 @@ export default function Home(props) {
             </tr>
           </thead>
           <tbody>
-            {filteredApps().map(app =>
+            {filteredApps().map((app, index) =>
               <tr key={app.appId}>
                 <td className="text-center bdr-lt-rt">
-                  <input type="checkbox" id={app.appId} name={app.applicantName} />
+                  {/* <input type="checkbox" id={app.appId} name={app.applicantName} /> */}
+                  <Checkbox
+                    key={app.appId}
+                    isChecked={app.checked}
+                    checkHandler={() => updateCheckStatus(index)}
+                    label={app.applicantName}
+                    index={index}
+                  />
                 </td>
                 <td className="text-center px-4 bdr-rt">{app.appId}</td>
                 <td className="text-left">
