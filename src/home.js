@@ -267,9 +267,9 @@ export default function Home(props) {
     )
   }
 
-  const appListingState = filteredApps().map(element => {
-    return {app: element, checked: false}
-  });
+  const appListingState = filteredApps().map(element => (
+      {app: element, checked: false}
+  ));
 
   const [selectedApps, setSelectedApps] = useState(appListingState);
 
