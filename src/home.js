@@ -225,13 +225,7 @@ export default function Home(props) {
     return progListing;
   }
 
-  const bannerStyle = {
-    "background-color": "#007bff", /* Blue color */
-    "color": "white", /* White text color */
-    "padding": "10px", /* Add some padding */
-    "text-align": "center", /* Center align text */
-    "font-size": "20px" /* Set font size */
-  }
+  // Added Code
 
   const [selectedOption, setSelectedOption] = useState('');
   const [uploadedFile, setUploadedFile] = useState(null);
@@ -248,6 +242,7 @@ export default function Home(props) {
 
   const sendFileRequest = () => {
     console.log("Sent file");
+    // Send file request to API
   }
 
   const sendStatusUpdate = () => {
@@ -271,17 +266,14 @@ export default function Home(props) {
       {app: element, checked: false}
   ));
 
-  const [selectedApps, setSelectedApps] = useState(appListingState);
-
+  const [checkedState, setCheckedState] = useState(
+    new Array(filteredApps().length).fill(false)
+  );
   const updateCheckStatus = index => {
-    setSelectedApps(
-      selectedApps.map((app, currentIndex) =>
-        currentIndex === index
-          ? { ...app, checked: !app.checked }
-          : app
-      )
-    )
-    console.log(selectedApps);
+    newStatus = checkedState
+    newStatus[index] = !newStatus[index]
+    setCheckedState(newStatus)
+    console.log(checkedState);
   }
 
 
@@ -289,21 +281,19 @@ export default function Home(props) {
   return (
     <>
       <>
-        <div class={bannerStyle}>
-          This is a test banner!
-        </div>
-
-        <label for="myfile">Choose File</label>
+      {/* Added Code */}
+        {/* <label for="myfile">Choose File</label> */}
         <input type="file" id="myfile" name="myfile" onChange={onFileChange} />
         <button onClick={sendFileRequest}>Upload Transcript</button>
 
         <div>
           <label htmlFor="selectOption">Select an option:</label>
+          <br></br>
           <select id="selectOption" value={selectedOption} onChange={handleSelectChange}>
             <option value="">-- Please select --</option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
+            <option value="Accepted">Accepted</option>
+            <option value="Rejected">Rejected</option>
+            <option value="Status">Status</option>
           </select>
           {selectedOption && <p>You selected: {selectedOption}</p>}
           <button onClick={sendStatusUpdate}>Update Status</button>
@@ -474,7 +464,7 @@ export default function Home(props) {
                   {/* <input type="checkbox" id={app.appId} name={app.applicantName} /> */}
                   <Checkbox
                     key={app.appId}
-                    isChecked={app.checked}
+                    isChecked={checkedState[index]}
                     checkHandler={() => updateCheckStatus(index)}
                     index={index}
                   />
@@ -521,7 +511,7 @@ export default function Home(props) {
                   }
                 </td>
                 <td className="text-center bdr-rt">
-                  {app.feePaymentCompleted
+                  {app.feePaymentCompleted 
                     ? <><span aria-hidden="true" className="fas fa-check"></span><span className="sr-only">app fee paid for {app.lastName}, {app.firstName} {app.middleInitial} - {app.programName}</span></>
                     : null
                   }
