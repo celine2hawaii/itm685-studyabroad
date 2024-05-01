@@ -299,7 +299,7 @@ export default function Home(props) {
           <button onClick={sendStatusUpdate}>Update Status</button>
         </div>
 
-        <pre>{JSON.stringify(selectedApps, null, 2)}</pre>
+        {/* <pre>{JSON.stringify(selectedApps, null, 2)}</pre> */}
       </>
 
 
