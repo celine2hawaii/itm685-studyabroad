@@ -270,7 +270,7 @@ export default function Home(props) {
     new Array(filteredApps().length).fill(false)
   );
   const updateCheckStatus = index => {
-    newStatus = checkedState
+    let newStatus = checkedState
     newStatus[index] = !newStatus[index]
     setCheckedState(newStatus)
     console.log(checkedState);
@@ -284,11 +284,12 @@ export default function Home(props) {
       {/* Added Code */}
         {/* <label for="myfile">Choose File</label> */}
         <input type="file" id="myfile" name="myfile" onChange={onFileChange} />
+        <br/>
         <button onClick={sendFileRequest}>Upload Transcript</button>
 
         <div>
           <label htmlFor="selectOption">Select an option:</label>
-          <br></br>
+          <br/>
           <select id="selectOption" value={selectedOption} onChange={handleSelectChange}>
             <option value="">-- Please select --</option>
             <option value="Accepted">Accepted</option>
