@@ -28,10 +28,12 @@ export default function Home(props) {
   const [sortAscAppsByName, setSortAscAppsByName] = useState("");
   const [sortAscAppsByCntRefSubmitted, setSortAscAppsByCntRefSubmitted] = useState("");
 
+  const [checkedState, setCheckedState] = useState([]);
 
 
   useEffect(() => {
     getAppListing();
+    setCheckedState(new Array(filteredApps().length).fill(false))
   }, []);
 
 
@@ -266,9 +268,6 @@ export default function Home(props) {
       {app: element, checked: false}
   ));
 
-  const [checkedState, setCheckedState] = useState(
-    new Array(filteredApps().length).fill(false)
-  );
   const updateCheckStatus = index => {
     let newStatus = checkedState
     newStatus[index] = !newStatus[index]
