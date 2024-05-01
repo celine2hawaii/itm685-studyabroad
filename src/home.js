@@ -33,7 +33,6 @@ export default function Home(props) {
 
   useEffect(() => {
     getAppListing();
-    setCheckedState(new Array(filteredApps().length).fill(false))
   }, []);
 
 
@@ -86,6 +85,7 @@ export default function Home(props) {
         })
         .then(data => {
           setAppListing(data.data);
+          setCheckedState(new Array(data.data.length).fill(false))
         })
         .catch(error => console.error('There has been a problem with your fetch operation:', error));
     })();
