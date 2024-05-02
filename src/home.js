@@ -5,6 +5,9 @@ import "./sac-admin-home.css";
 import jsonProgListing from './getProgramOfferingDetailByTerm-202440.json';
 import jsonActiveTerms from './getActiveTerms.json';
 import SACStatus from "./sac-templates/sac-status";
+import DataTable from "./team.jsx"
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 
 export default function Home(props) {
@@ -242,6 +245,7 @@ export default function Home(props) {
     console.log(event.target.files[0].name);
   };
 
+
   const sendFileRequest = () => {
     console.log("Sent file");
     // Send file request to API
@@ -290,16 +294,21 @@ export default function Home(props) {
           <label htmlFor="selectOption">Select an option:</label>
           <br/>
           <select id="selectOption" value={selectedOption} onChange={handleSelectChange}>
-            <option value="">-- Please select --</option>
-            <option value="Accepted">Accepted</option>
-            <option value="Rejected">Rejected</option>
-            <option value="Status">Status</option>
+              <option value="">Any Status</option>
+              <option value="Incomplete">Incomplete</option>
+              <option value="Submitted">Submitted</option>
+              <option value="Under Review">Under Review</option>
+              <option value="Complete - Approved">Complete - Approved</option>
+              <option value="Complete - Denied">Complete - Denied</option>
+              <option value="Complete - Exception">Complete - Exception</option>
+              <option value="Complete - Withdrew">Complete - Withdrew</option>
           </select>
           {selectedOption && <p>You selected: {selectedOption}</p>}
           <button onClick={sendStatusUpdate}>Update Status</button>
         </div>
 
         {/* <pre>{JSON.stringify(selectedApps, null, 2)}</pre> */}
+	<DataTable rows={filteredApps()}/>
       </>
 
 
