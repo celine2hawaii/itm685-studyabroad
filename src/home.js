@@ -5,9 +5,7 @@ import "./sac-admin-home.css";
 import jsonProgListing from './getProgramOfferingDetailByTerm-202440.json';
 import jsonActiveTerms from './getActiveTerms.json';
 import SACStatus from "./sac-templates/sac-status";
-import DataTable from "./team.jsx"
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
+import { DataGrid } from '@mui/x-data-grid';
 
 
 export default function Home(props) {
@@ -234,6 +232,30 @@ export default function Home(props) {
 
   const [selectedOption, setSelectedOption] = useState('');
   const [uploadedFile, setUploadedFile] = useState(null);
+const [selectedApps, setSelectedApps] = useState([])
+
+const columns = [
+  { field: 'Applicantprgram', headerName: 'Applicant Program',
+	valueGetter: (value, row) => `${row.programName || ''}`
+},
+  { field: 'applicantProgram', headerName: 'Name',
+	valueGetter: (value, row) => `${row.applicantName || ''}`
+},
+  { field: 'email', headerName: 'Email',
+	valueGetter: (value, row) => `${row.email || ''}`
+},
+  { field: 'lastModified', headerName: 'Last Updated'},
+  { field: 'info', headerName: 'Info'},
+  { field: 'academicReferenceCompleted', headerName: 'Acad'},
+  { field: 'repeatAppDesc', headerName: 'Rpt?'},
+  { field: 'cntRefRequested', headerName: 'Ref Rcvd'},
+  { field: 'posCompleted', headerName: 'PoSS'},
+  { field: 'suppInfoCompleted', headerName: 'Supp'},
+  { field: 'surveyCompleted', headerName: 'Survey'},
+  { field: 'feePaymentCompleted', headerName: 'Fee'},
+  { field: 'adminAppStatus', headerName: 'Status'},
+  { field: 'depositPaymentCompleted', headerName: 'Init Pmt'},
+];
 
   const handleSelectChange = (event) => {
     setSelectedOption(event.target.value);
@@ -253,6 +275,13 @@ export default function Home(props) {
 
   const sendStatusUpdate = () => {
     console.log("Updated status");
+	let updatedApps = appListing;
+	selectedApps.forEach((appId) => {
+		let idx = appListing.findIndex(x => x.appId === appId);
+		updatedApps[idx].adminAppStatus = selectedOption;
+		console.log(appId, idx)
+})
+	setAppListing(updatedApps)
   }
 
   const Checkbox = ({ isChecked, checkHandler, index }) => {
@@ -272,11 +301,9 @@ export default function Home(props) {
       {app: element, checked: false}
   ));
 
-  const updateCheckStatus = index => {
-    let newStatus = checkedState
-    newStatus[index] = !newStatus[index]
-    setCheckedState(newStatus)
-    console.log(checkedState);
+  const updateCheckStatus = (ids) => {
+  	const selectedIDs = new Set(ids);
+	setSelectedApps(ids)
   }
 
 
@@ -289,10 +316,11 @@ export default function Home(props) {
         <input type="file" id="myfile" name="myfile" onChange={onFileChange} />
         <br/>
         <button onClick={sendFileRequest}>Upload Transcript</button>
-
+	<br/>
+	<br/>
+	<br/>
         <div>
-          <label htmlFor="selectOption">Select an option:</label>
-          <br/>
+          <label htmlFor="selectOption">Select an option:</label>  {`   `}
           <select id="selectOption" value={selectedOption} onChange={handleSelectChange}>
               <option value="">Any Status</option>
               <option value="Incomplete">Incomplete</option>
@@ -303,12 +331,24 @@ export default function Home(props) {
               <option value="Complete - Exception">Complete - Exception</option>
               <option value="Complete - Withdrew">Complete - Withdrew</option>
           </select>
-          {selectedOption && <p>You selected: {selectedOption}</p>}
           <button onClick={sendStatusUpdate}>Update Status</button>
         </div>
 
-        {/* <pre>{JSON.stringify(selectedApps, null, 2)}</pre> */}
-	<DataTable rows={filteredApps()}/>
+	    <div style={{ height: 400, width: '100%' }}>
+      <DataGrid
+	getRowId={(row) => row.appId}
+        rows={filteredApps()}
+        columns={columns}
+        initialState={{
+          pagination: {
+            paginationModel: { page: 0, pageSize: 5 },
+          },
+        }}
+        pageSizeOptions={[5, 10]}
+        checkboxSelection
+	onRowSelectionModelChange={(ids) => updateCheckStatus(ids)}
+      />
+    </div>
       </>
 
 

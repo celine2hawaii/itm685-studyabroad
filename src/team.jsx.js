@@ -38,6 +38,7 @@ export default function DataTable(props) {
         }}
         pageSizeOptions={[5, 10]}
         checkboxSelection
+onRowSelectionModelChange={(ids) => props.onSelectChange(ids)}
       />
     </div>
   );
